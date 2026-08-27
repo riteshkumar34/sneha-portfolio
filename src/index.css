@@ -35,9 +35,13 @@ body {
   box-shadow: 0 20px 55px rgba(87, 36, 102, 0.16);
 }
 
+/* Gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #7e22ce, #db2777);
+  background: linear-gradient(90deg, #db2777, #7e22ce);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-title {
