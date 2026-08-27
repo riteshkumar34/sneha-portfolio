@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background: #fffafc;
+  color: #292033;
+}
+
+::selection {
+  background: #f9a8d4;
+  color: #581c87;
+}
+
+.section-container {
+  width: min(1150px, 92%);
+  margin: auto;
+}
+
+.card {
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 15px 45px rgba(87, 36, 102, 0.1);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 55px rgba(87, 36, 102, 0.16);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7e22ce, #db2777);
+  color: transparent;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .card {
+    border-radius: 22px;
+  }
+}
